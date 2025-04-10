@@ -3,6 +3,8 @@ import React, { useEffect, useCallback, useState } from "react";
 function MainComponent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDark, setIsDark] = useState(false);
+  const [showBanner, setShowBanner] = useState(true);
+
 
   useEffect(() => {
     // Initialize theme from localStorage or system preference
