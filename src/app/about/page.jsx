@@ -209,7 +209,7 @@ function MainComponent() {
                 Ready to Start Your Journey?
               </h2>
               <a
-                href="/pulseplay.apk"
+                href="/app-debug.apk"
                 download
                 className="inline-block bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-8 py-3 rounded-md font-inter hover:bg-gray-700 dark:hover:bg-gray-100 transition-colors"
               >
