@@ -166,6 +166,21 @@ function MainComponent() {
         )}
       </nav>
 
+       {showBanner && (
+        <div className="fixed top-16 w-full bg-[#6366F1] dark:bg-[#818CF8] text-white py-3 px-4 z-40">
+          <div className="max-w-7xl mx-auto flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              <span className="text-lg font-inter">Hey Fitness Freak 👋,</span>
+              <span className="font-inter">
+                Please review the app and fill the form for future updation!{" "}
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSciBHjyqzsds8lUwayzYzgW6tDCw03dLaG7FrJCWhBsi69myw/viewform?usp=header"
+                  className="underline hover:text-gray-200 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  click here
+
       <main className="pt-16 flex-grow">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <section className="py-20">
