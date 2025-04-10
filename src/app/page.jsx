@@ -24,14 +24,15 @@ function MainComponent() {
     }
   }, [isDark]);
 
-  const handleDownload = useCallback(() => {
-    const link = document.createElement("a");
-    link.href = "/pulse-play.apk";
-    link.download = "pulse-play.apk";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }, []);
+ const handleDownload = useCallback(() => {
+  const link = document.createElement("a");
+  link.href = "/app-debug.apk"; // Updated to match uploaded file
+  link.setAttribute("download", "pulse-play.apk"); // Optional: give it a nice name
+  link.setAttribute("type", "application/vnd.android.package-archive");
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}, []);
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 flex flex-col transition-colors duration-200">
