@@ -166,7 +166,7 @@ function MainComponent() {
         )}
       </nav>
 
-       {showBanner && (
+        {showBanner && (
         <div className="fixed top-16 w-full bg-[#6366F1] dark:bg-[#818CF8] text-white py-3 px-4 z-40">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <div className="flex items-center space-x-2">
@@ -180,6 +180,19 @@ function MainComponent() {
                   rel="noopener noreferrer"
                 >
                   click here
+                </a>
+              </span>
+            </div>
+            <button
+              onClick={() => setShowBanner(false)}
+              className="text-white hover:text-gray-200 transition-colors"
+              aria-label="Close banner"
+            >
+              <i className="fas fa-times text-xl"></i>
+            </button>
+          </div>
+        </div>
+      )}
 
       <main className="pt-16 flex-grow">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
