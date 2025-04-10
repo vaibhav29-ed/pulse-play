@@ -174,7 +174,7 @@ function MainComponent() {
             <div className="flex items-center space-x-2">
               <span className="text-lg font-inter">Hey Fitness Freak 👋,</span>
               <span className="font-inter">
-                Please review the app and fill the form for future updation!{" "}
+                Please review the app and fill the form for future updates!{" "}
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSciBHjyqzsds8lUwayzYzgW6tDCw03dLaG7FrJCWhBsi69myw/viewform?usp=header"
                   className="underline hover:text-gray-200 transition-colors"
@@ -186,7 +186,7 @@ function MainComponent() {
               </span>
             </div>
             <button
-              onClick={() => setShowBanner(false)}
+             onClick={handleCloseBanner}
               className="text-white hover:text-gray-200 transition-colors"
               aria-label="Close banner"
             >
